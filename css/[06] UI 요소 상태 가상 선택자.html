@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>회원가입 폼 예제</title>
+    <link rel="stylesheet" href="./css/css01.css">
 </head>
 <body>
     <form name="signUp" action="signUp.jsp" method="post">
-        <fieldset style="width: 500px; height: 450px;">
+        <fieldset>
             <legend>회원가입</legend>
             < 필수정보 >
             <hr>
@@ -27,6 +28,8 @@
                 <input type="checkbox" name="a" value="recommend">추천
                 <input type="checkbox" name="a" value="adv">광고
                 <input type="checkbox" name="a" value="ect">기타
+            <hr>
+            입력 불가능 : <input type="text" disabled><br>
         </fieldset>
         <button type="submit">회원가입 신청</button>
         <button type="reset">다시 입력</button>

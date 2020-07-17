@@ -1,0 +1,17 @@
+
+input:enabled {
+    background-color: pink;
+}
+
+input:focus {
+    background-color: mediumaquamarine;
+}
+
+input:disabled {
+    background-color: dimgrey;
+}
+
+fieldset {
+    width: 500px;
+    height: auto;
+}

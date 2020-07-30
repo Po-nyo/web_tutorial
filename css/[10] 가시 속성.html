@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가시속성</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: pink;
+        }
+        .none {
+            display: none;
+        }
+        .inline-block {
+            display: inline-block;
+        }
+        .inline {
+            display: inline;
+        }
+        .block {
+            display: block;
+        }
+        .visible {
+            visibility: visible;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        .half-transparent {
+            opacity: 0.5;
+        }
+        #answer {
+            opacity: 0
+        }
+        #answer:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>display 속성</h1>
+    <div class="box inline-block">box1</div>
+    <div class="box inline-block">box2</div>
+    <div class="box inline-block">box3</div>
+    <div class="box none">box4</div>
+    <p class="inline">p태그 #1</p>
+    <p class="inline">p태그 #2</p>
+    <span class="block">span 태그 #1</span>
+    <span class="block">span 태그 #2</span>
+    <hr>
+    <h1>visibility 속성</h1>
+    <div class="box hidden"></div>
+    <div class="box visible"></div>
+    <div class="box visible"></div>
+    <hr>
+    <h1>opacity 속성</h1>
+    <h3>OX 문제: opacity 속성이 1이면 투명이다.</h3>
+    <p class="half-transparent">마우스를 올리면 정답이 보입니다.</p>
+    정답 : <span id="answer">정답은 X 입니다. opacity 속성값이 0에 가까울수록 투명해집니다.</span>
+</body>
+</html>

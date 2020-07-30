@@ -5,7 +5,7 @@
     <title>css 적용 예시</title>
     <style>
         p {
-            background-color : pink;
+            color: darkslateblue;
         }
         .class1 {
             color : blue;
@@ -22,6 +22,12 @@
         h1[text] {
             color : purple;
         }
+        .center {
+            text-align: center;
+        }
+        .big {
+            font-size: large;
+        }
     </style>
 </head>
 <body>
@@ -31,5 +37,9 @@
     <p id="id1">id1인 p</p>
     <h1>h1</h1>
     <h1 text="h1_text">text 속성 h1</h1>
+    <br>
+    <p class="center">center</p>
+    <p class="big">big</p>
+    <p class="center big">center & big</p>
 </body>
 </html>

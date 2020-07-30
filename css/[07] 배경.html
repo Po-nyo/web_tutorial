@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>배경</title>
+    <style>
+        div {
+            width: 800px;
+            height: 800px;
+            margin: 50px auto;
+        }
+        .color {
+            background-color: pink;
+        }
+        .image {
+            background-image: url("../src/img/cat.png");
+        }
+        .image2 {
+            background-image: url("../src/img/cat.png");
+            background-repeat: no-repeat;
+        }
+        .sized {
+            background-size: 300px;
+        }
+        .dark {
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="color">
+        <br>
+        <br>
+        <p>배경을 color로 채움</p>
+    </div>
+    <div class="image">
+        <br>
+        <br>
+        <p class="dark">배경을 image로 채움</p>
+    </div>
+    <div class="image2">
+        <br>
+        <br>
+        <p class="dark">no-repeat</p>
+    </div>
+    <div class="image sized">
+        <br>
+        <br>
+        <p class="dark">배경 size 300px</p>
+    </div>
+
+</body>
+</html>

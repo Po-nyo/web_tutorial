@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+    <style>
+        div {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: lime;
+            border: 1px solid black;
+        }
+        #d1 {
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #d2 {
+            top: 30px;
+            left: 30px;
+            z-index: 0;
+        }
+        #d3 {
+            top: 60px;
+            left: 60px;
+            z-index: 1;
+        }
+        #d4 {
+            top: 0;
+            left: 500px;
+            z-index: 1;
+        }
+        #d5 {
+            top: 30px;
+            left: 530px;
+            z-index: 0;
+        }
+        #d6 {
+            top: 60px;
+            left: 560px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">d1</div>
+    <div id="d2">d2</div>
+    <div id="d3">d3</div>
+    <div id="d4">d4</div>
+    <div id="d5">d5</div>
+    <div id="d6">d6</div>
+</body>
+</html>
